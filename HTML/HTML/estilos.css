@@ -1,0 +1,32 @@
+p{
+    color: green;
+    font-family: Geneva;
+    border: 1px ;
+}
+
+h1{
+    color: black;
+    font-family: 'Verdana';
+    font-size:75px;
+    font-style:bolder;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Verdana';
+}
+
+h3{
+    color: rgb(0, 0, 71);
+    font-family: 'Verdana';
+    line-height: 1;
+    text-align: justify;
+}
+
+.a1 {
+    color: blue;
+    font-family: Verdana;
+    font-style: oblique;
+    line-height: 1.5;
+
+}

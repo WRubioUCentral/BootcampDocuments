@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Inicio</title>
+</head>
+<body>
+    <h1>Bienvenidos al {{ titulo }} de programación básica</h1>
+    <p>Este es un ejemplo de una página renderizada con Flask.</p>
+    <link rel="stylesheet" href="estilos.css">
+    <ul>
+        {% for i in nombres %}
+        <li>{{ i }}</li>
+        {% endfor %}
+    </ul>
+    <a href="http://127.0.0.1:5000/contacto" target="_blank">Contacta al propietario</a>
+</body>
+</html>

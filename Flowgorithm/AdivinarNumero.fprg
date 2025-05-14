@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="AdivinarNumero"/>
+        <attribute name="authors" value="WiiM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-24 10:22:09 a.&#160;m."/>
+        <attribute name="created" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDswOToyOTozNiBhLsKgbS47MjQzOQ=="/>
+        <attribute name="edited" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDsxMDoyMjowOSBhLsKgbS47MTsyNTMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Voy a advinir tu n&#250;mero.&quot;" newline="True"/>
+            <output expression="&quot;Ingresa tu n&#250;mero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n != 2">
+                <output expression="n &amp; &quot; no es mi n&#250;mero, intentalo de nuevo&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <output expression="&quot;Si, mi n&#250;mero era &quot; &amp; 2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Suma"/>
+        <attribute name="authors" value="WiiM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-24 08:56:52 a.&#160;m."/>
+        <attribute name="created" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDswNzoyNToyNSBhLsKgbS47MjQzMQ=="/>
+        <attribute name="edited" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDswODo1Njo1MiBhLsKgbS47MTsyNTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Se declaran variables"/>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <comment text="Se muestra el mensaje de salida"/>
+            <output expression="&quot;Ingrese primer n&#250;mero: &quot;" newline="True"/>
+            <comment text="Se captura la entrada en la variable n1"/>
+            <input variable="n1"/>
+            <output expression="&quot;Ingrese segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <assign variable="resultado" expression="n1 + n2"/>
+            <output expression="&quot;El resultado de la suma es: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

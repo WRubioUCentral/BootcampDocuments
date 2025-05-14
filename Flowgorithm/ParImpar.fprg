@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ParImpar"/>
+        <attribute name="authors" value="WiiM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-24 09:15:06 a.&#160;m."/>
+        <attribute name="created" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDswODo1Njo1NCBhLsKgbS47MjQzOA=="/>
+        <attribute name="edited" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDswOToxNTowNiBhLsKgbS47MTsyNTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;El programa va a decir si el n&#250;mero ingresado es par o impar.&quot;" newline="True"/>
+            <output expression="&quot;ingrese el n&#250;mero: &quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n % 2 == 0">
+                <then>
+                    <output expression="n &amp; &quot; es par.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n &amp; &quot; es impar.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

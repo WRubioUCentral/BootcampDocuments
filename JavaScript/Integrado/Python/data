@@ -1,0 +1,9 @@
+import kagglehub
+from kagglehub import KaggleDatasetAdapter
+from flask import Flask, render_template
+
+file_path = "all_weekly_excess_deaths.csv"
+df = kagglehub.load_dataset(KaggleDatasetAdapter.PANDAS,"dhruvildave/covid19-deaths-dataset",file_path,)
+df1 = df.loc[(df['country']=='Colombia') & (df['year']==2020)]
+DF = df1[['week', 'total_deaths']]
+DF.info()

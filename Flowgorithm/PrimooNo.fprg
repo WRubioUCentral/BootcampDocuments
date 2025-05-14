@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PrimooNo"/>
+        <attribute name="authors" value="WiiM"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-24 11:28:00 a.&#160;m."/>
+        <attribute name="created" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDsxMDoyMjoxMSBhLsKgbS47MjQxNw=="/>
+        <attribute name="edited" value="V2lpTTtXUlVCSU87MjAyNS0wNC0yNDsxMToyODowMCBhLsKgbS47MjsyNTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="salida" type="Boolean" array="False" size=""/>
+            <assign variable="salida" expression="true"/>
+            <output expression="&quot;Veremos si el n&#250;mero es primo, ingresalo&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="2" end="n-1" direction="inc" step="1">
+                <if expression="(n % i) == 0">
+                    <then>
+                        <assign variable="salida" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="salida == false">
+                <then>
+                    <output expression="n &amp; &quot; no es primo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n &amp; &quot; es primo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+h1{
+    color: #ff5900;
+    font-family: Arial;
+    font-size: 200px;
+    text-align: center;
+}
+
+h3{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 40px;
+    text-align: center;
+}
+
+p{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 40px;
+    text-align: center;
+}
+
+.texto_pequeno{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 10px;
+    text-align: center;
+}
+
+body{
+    background-image: url("../Multimedia/fondo.png");
+    background-size: cover; /*Ajusta al tamaño del navegador*/
+    background-position: center;
+}
+
+.espaciado{
+    margin-bottom: 10px;
+}
+
+input{ /*Centrado para cualquier caja*/
+    display: block;
+    margin: 0 auto;
+}
