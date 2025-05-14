@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --index: calc(1vw + 1vh); /* Corregido: "idex" → "index" */
+    --transition: cubic-bezier(.1, .07, 0, 1);
+}
+
+body {
+    background-color: #141414;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.items {
+    display: flex;
+    gap: 0.4rem;
+    perspective: calc(var(--index) * 35);
+}
+
+.item {
+    width: 150px; /* Añade ancho */
+    height: 200px; /* Añade altura */
+    background-size: cover; /* Para que la imagen cubra el div */
+    background-position: center; /* Centra la imagen */
+    transition: transform 0.5s var(--transition);
+    position: relative; /* Necesario para pseudoelementos */
+}
+
+.item::before, .item::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: calc(var(--index) * -1);
+    background: rgba(255, 255, 255, 0.1); /* Para visualizarlos */
+}
+
+.item::after {
+    left: calc(var(--index) * -1);
+}
+
+.items .item:hover {
+    transform: translateZ(calc(var(--index) * 10)); /* Corregido: paréntesis cerrado */
+}
+
+.items .item:hover + * {
+    transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg); /* Corregido: ; y comillas */
+    z-index: -1;
+}
